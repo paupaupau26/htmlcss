@@ -1,0 +1,142 @@
+body{
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif
+}
+.page-wrapper {
+    max-width: 1024px;
+    background-color: rgb(74, 173, 145);
+    margin: 0px auto 30px auto;
+    padding: 15px;
+    padding: 0px 15px 15px 30px;
+ 
+
+}
+header{
+    height: 50px;
+    width: 100%;
+    background-color: rgba(52, 149, 38, 0.771);
+    position: fixed;
+    left: 0px;
+    top: 0px;
+}
+
+.banner{
+    height: 400px;
+    background-image: url('../images/River_HD_Images.jpg');
+    background-size: cover;
+    background-position: bottom;
+}
+h1{
+    color:rgb(58, 58, 169);
+    text-align: center;
+    padding-top: 60px;
+    font-size: 46px;
+}
+
+h2{
+    color:rgb(61, 63, 97);
+    text-align: center;
+    font-size: 40px;
+}
+
+section.about-me{
+    margin-top:60px;
+    margin-bottom:40px;
+
+}
+
+
+.about-me{
+    font-size: 20px;
+    line-height:20px;
+    text-align: justify;    
+}
+
+.d-none{
+    display: none;
+}
+
+section.my-portfolio div{
+    border: 1px solid;
+}
+.d-flex{
+    display: flex;
+}
+.d-inline.d2{
+    width: 300px;
+    display: inline-block;
+    background-color: red;
+}
+.d-inline{
+    display: inline;
+}
+.d-none, .d-inline {
+
+    font-size: 16px;
+}
+section>.d-inline{
+    color: rgb(59, 62, 35);
+}
+secion .d-line{
+    color:yellow;
+
+}
+.with-direction{
+    flex-direction: row;
+    flex-wrap: nowrap;
+   
+}
+.with-direction>div{
+    height: 40px;
+    text-align:center;
+}
+
+.d12{
+    order: 2;
+    flex-grow: 1;
+    text-align:center;
+}
+.d13{
+    order: 5;
+    flex-grow: 1;
+    text-align:center;
+}
+.d14{
+    order: 1;
+    flex-grow: 2;
+    text-align:center;
+
+}
+.d15{
+    order:3;
+    flex-grow: 3;
+    text-align:center;
+}
+.d16{
+    order: 7;
+    flex-grow: 5;
+    text-align:center;
+}
+
+
+.d-flex>.d-inline{
+    display: inline-block;
+    width:180px;
+    padding:15px;
+    margin:15px;
+    border-radius:4px;
+}
+section.my-portfolio div.d-flex{
+    flex-wrap: wrap;
+    justify-content: center;
+    border:none;
+    padding:15px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+section.my-portfolio .d-flex p{
+    font-size: 14px;
+}
+section.my-portfolio .d-flex h4{
+    min-height: 60px;
+}
