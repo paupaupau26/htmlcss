@@ -1,49 +1,49 @@
 body{
     margin: 0;
-    font-family:Arial, Helvetica, sans-serif
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 .page-wrapper {
     max-width: 1024px;
-    background-color: rgb(74, 173, 145);
+    background-color: #ccc;
     margin: 0px auto 30px auto;
-    padding: 15px;
     padding: 0px 15px 15px 30px;
- 
-
 }
-header{
+
+header {
     height: 50px;
     width: 100%;
     background-color: #333;
     position: fixed;
-    left: 0px;
+    left:0px;
     top: 0px;
 }
 
 .banner{
     height: 400px;
-    background-image: url('../images/River_HD_Images.jpg');
+    background-image: url('../images/leaf.jpg.jpg');
     background-size: cover;
     background-position: bottom;
+    margin-top: 60px,
 }
 h1{
-    color:rgb(58, 58, 169);
+    color:white;
     text-align: center;
     padding-top: 60px;
     font-size: 46px;
 }
 
 h2{
-    color:rgb(61, 63, 97);
+    color:white;
     text-align: center;
     font-size: 40px;
 }
 
-section.about-me{
+/*section.about-me{
     margin-top:60px;
     margin-bottom:40px;
 
-}
+}*/
 
 
 .about-me{
@@ -56,9 +56,9 @@ section.about-me{
     display: none;
 }
 
-section.my-portfolio div{
+/*section.my-portfolio div{
     border: 1px solid;
-}
+}*/
 .d-flex{
     display: flex;
 }
@@ -216,7 +216,7 @@ section.my-portfolio .d-flex h4{
 }
 nav ul{
     list-style: none;
-    margin: 0;
+    margin: -8px;
 }
 nav ul li{
     display: inline-block;
@@ -236,9 +236,9 @@ nav ul li:hover{
 
 nav ul li:hover a{
     color: yellow;
-    line-height:50px;
+    
 }
-@media screen and (max-wdith: 992px ){
+@media screen and (max-width: 992px){
     
     header{
         height: auto;
@@ -252,12 +252,5 @@ nav ul li:hover a{
     
     nav ul li{
         display:block;
-    }
-}
-
-@media screen and (max-width:768px){
-    .banner{
-        background-image:none;
-        background-color:#333;
     }
 }
