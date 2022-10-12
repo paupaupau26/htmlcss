@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <html>
+    <head>
+        <title>Intro To JavaScript</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    </head>
+<body>
+    <input type="number" id="input_number" value="">
+    <button onclick="odd_even()">Click Me</button>
+    <div id="result1"></div>
+
+    <input type="text" id="single_char" value1="" maxlength="1">
+    <button onclick="doCheck()">Click Me</button>
+
+    <div id="result2"></div>
+</body>
+    <script>
+        function odd_even(){            
+            let value = parseInt(document.getElementById('input_number').value);
+
+            if((value % 2) == 0){
+                document.getElementById('result1').innerHTML = "even_numbers";
+            }
+            else{
+                document.getElementById('result1').innerHTML = "odd_numbers";
+            }
+        }
+        function doCheck(){            
+            let value1 = (document.getElementById('single_char').value).toLowerCase();
+
+            if(value1 == "a"||value1 == "e"||value1 == "i"||value1 == "o" ||value1 == "u"){
+                document.getElementById('result2').innerHTML = "Vowel";
+            }
+            else{
+                document.getElementById('result2').innerHTML = "Consonant";
+            }
+        }
+
+    </script>
+   
+
+    
+
