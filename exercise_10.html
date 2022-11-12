@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Invoice_Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="js/bootstrap.min.js" type="javascript"></script>
+    <link href="css/style.css" rel="stylesheet"/>
+    
+</head>
+<body>
+    <div class="page-wrapper" style="background-color: rgb(133, 207, 139)">
+    <form class="border p-3 my-5" action="https://google.com" target="_blank" method="GET">
+        <div class="container">        
+            <div class="row">                
+                    <h4>Invoice Details</h4>
+                <div class="col-md-3">
+                    <label class="form-label">Invoice To:</label>
+                        <input class="form-control m-3" placeholder="Full_Name" maxlength="30" name="Fullname"/>
+                    <div class="row">
+                        <div class="col">
+                            <label class="form-label">Contact #:</label>
+                            <input class="form-control m-3" maxlength="14" placeholder="Contact_Number" name="contact_number"/>
+                        </div>
+                        <div class="col">
+                            <label class="form-label">Date:</label>
+                            <input class="form-control m-3" type="date" name="date">
+                        </div>
+                    </div> 
+                </div>                 
+                <table class="table table-sm table-bordered table-striped">
+                    <thead style="text-align:center; background-color: rgb(130, 159, 238);">
+                    <tr>
+                        <th>Item Description</th>
+                        <th>Qty</th>
+                        <th>Unit Price</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody style="background-color: rgb(133, 207, 139) ">
+                    <tr>
+                        <td class="form-label" class="form-label"><input class="form-control" type="text" name="description1" placeholder="Description_1"></td>
+                        <td class="form-label"><input class="form-control" type="number" name="quantity" placeholder="Quantity_1"></td>
+                        <td class="form-label"><input class="form-control" type="number" name="quantity" placeholder="UnitPrice_1"></td>
+                        <td class="form-label"><input class="form-control" type="number" name="quantity" placeholder="Total_1"></td>
+                    </tr>
+                    <tr>
+                        <td class="form-label" class="form-label"><input class="form-control" type="text" name="description1" placeholder="Description_2"></td>
+                        <td class="form-label"><input class="form-control" type="number" name="quantity" placeholder="Quantity_2"></td>
+                        <td class="form-label"><input class="form-control" type="number" name="quantity" placeholder="UnitPrice_2"></td>
+                        <td class="form-label"><input class="form-control" type="number" name="quantity" placeholder="Total_2"></td>
+                    </tr>
+                    <tr>
+                        <td class="form-label" class="form-label"><input class="form-control" type="text" name="description1" placeholder="Description_3"></td>
+                        <td class="form-label"><input class="form-control" type="number" name="quantity" placeholder="Quantity_3"></td>
+                        <td class="form-label"><input class="form-control" type="number" name="quantity" placeholder="UnitPrice_3"></td>
+                        <td class="form-label"><input class="form-control" type="number" name="quantity" placeholder="Total_3"></td>
+                    </tr>
+                    <tr>
+                        <td class="form-label" class="form-label"><input class="form-control" type="text" name="description1" placeholder="Description_4"></td>
+                        <td class="form-label"><input class="form-control" type="number" name="quantity" placeholder="Quantity_4"></td>
+                        <td class="form-label"><input class="form-control" type="number" name="quantity" placeholder="UnitPrice_4"></td>
+                        <td class="form-label"><input class="form-control" type="number" name="quantity" placeholder="Total_4"></td>
+                    </tr>
+                    <tr>
+                        <td class="form-label" colspan="3" style="text-align: right;">Sub-Total</td>
+                        <td class="form-label" style="text-align: center;"><input class="form-control"type="number" placeholder="Read_only"/></td>
+                    </tr>
+                    <tr>
+                        <td class="form-label" colspan="3" style="text-align: right;">VAT %12</td class="form-label">
+                        <td class="form-label" style="text-align: center;"><input class="form-control" type="number" placeholder="Read_only"/></td>
+                    </tr>
+                    <tr>
+                        <td class="form-label" colspan="3" style="text-align: right;">Total</td>
+                        <td class="form-label" style="text-align: center;"><input class="form-control" type="number" placeholder="Read_only"/></td>
+                    </tr>                
+                </tbody> 
+            </table>                     
+            <div class="container-fluid " style="background-color: rgb(133, 207, 139)">
+                <div class="row">
+                    <div class="col my-3">
+                        <h2>Additional Details</h2>
+                        <label class="form-label">Payment Method</label>
+                            <select class="form-select" name="payment_method">
+                                <option>---Select Payment---</option>
+                                <option>Gcash</option>
+                                <option>Credit Card</option>
+                                <option>Paypal</option>
+                                <option>Cash On Delivery</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col my-3"> 
+                            <input id="Home_Address" type="radio" class="form-check-input" name="Delivery_Address"/>
+                            <label for="Home_Address" class="form-check-label">Home</label>
+                            <input id="Office_Address" type="radio" class="form-check-input" name="Delivery_Address"/>
+                            <label for="Office_Address" class="form-check-label">Office</label>
+                        </div>                           
+                    </div>
+                    <div class="row">
+                        <div class="col my-3">
+                            <textarea class="form-control" name="Address" placeholder="Put Your Complete Address"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col my-3">
+                            <button class="btn btn-success">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+            
+    </div>
+</body>
+</html>
+
+
+    
+        
